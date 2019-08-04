@@ -164,8 +164,6 @@ void arp_reply(pcap_t *fp) {
 
     printf("[*] Sender ");
     print_mac(arp_hdr->ar_sha);
-    printf("[*] Sender ");
-    print_ip(arp_hdr->ar_spa);
 
     for (int i = 0; i < 6; i++)
         sender_mac[i] = arp_hdr->ar_sha[i];
