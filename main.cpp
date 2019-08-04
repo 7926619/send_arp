@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     char errbuf[PCAP_ERRBUF_SIZE];
     my_info = reinterpret_cast<MyInfo *>(malloc(sizeof(MyInfo)));
 
-    if(argc < 1) {
+    if(argc < 4) {
         printf("Usage: ./send_arp <interface> <sender ip> <target ip>\n");
         return -1;
     }
